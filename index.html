@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Encriptador de texto - Alura Challenges ONE</title>
+
+	<link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+	<header class="header">
+		<a href="./index.html"><img src="./img/logo-alura.png" alt="Logo de alura"></a>
+	</header>
+	<main class="encryptor">
+		<section class="encryptor__input">
+			<textarea id="userText" name="userText" placeholder="Ingrese el texto aqui" class="encryptor__input__textarea"></textarea>
+			<div class="encryptor__controls">
+				<p class="encryptor__text__warning"><img src="./img/exclamation-circle.png" alt="Círculo con un signo de exclamación">Solo letras minúsculas y sin acentos</p>
+				<div class="encryptor__buttons">
+					<button id="encrypt" class="encryptor__button encryptor__button__primary">Encriptar</button>
+					<button id="decrypt" class="encryptor__button encryptor__button__secondary">Desencriptar</button>
+				</div>
+			</div>
+		</section>
+		<section class="encryptor__output">
+			<div id="noMessage">
+				<img src="./img/person.png" alt="Muñeco mirando con una lupa un diamante">
+				<p class="encryptor__text encryptor__text__highlighted">Ningún mensaje fue encontrado</p>
+				<p class="encryptor__text">Ingresa el texto que desees encriptar o desencriptar.</p>
+			</div>
+			<div id="message" class="encryptor__output__message">
+				<textarea id="showText" name="showText" class="encryptor__output__textarea"></textarea>
+				<button id="copy" class="encryptor__button encryptor__button__secondary">Copiar</button>
+			</div>
+		</section>
+	</main>
+	<footer class="footer">
+		<p>Desarrollado por Jorge Díaz</p>
+	</footer>
+
+	<script src="./js/app.js"></script>
+</body>
+</html>
