@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+:root {
+	--white: #FFFFFF;
+	--bg-color: #F3F5FC;
+	--primary-color: #0A3871;
+	--secondary-color: #495057;
+	--secondary-color-v2: #343A40;
+	--tertiary-color: #D8DFE8;
+	
+	--font-inter: "Inter", sans-serif;
+}
+
+*, *::before, *::after {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-color: var(--bg-color);
+	font-family: var(--font-inter);
+	box-sizing: border-box;
+}
+
+.header {
+	max-width: 1200px;
+	width: 95%;
+	margin: 20px auto;
+}
+
+.encryptor {
+	max-width: 1200px;
+	width: 95%;
+	margin: 25px auto;
+
+	display: flex;
+	justify-content: space-between;
+}
+
+.encryptor__input {
+	flex-basis: calc(60% - 1rem);
+}
+
+textarea {
+	background: transparent;
+	width: 100%;
+	border: none;
+	resize: none;
+	outline: none;
+}
+
+.encryptor__input__textarea {
+	color: var(--primary-color);
+	min-height: 400px;
+	font-size: 2rem;
+}
+
+.encryptor__input__textarea::placeholder {
+	color: var(--primary-color);
+}
+
+.encryptor__controls {
+	margin-top: 20px;
+}
+
+.encryptor__text__warning {
+	color: var(--secondary-color);
+	font-size: 0.75rem;
+	display: flex;
+	align-items: center;
+	gap: 8px;
+}
+
+.encryptor__buttons {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 24px;
+}
+
+.encryptor__button {
+	width: 328px;
+	margin-top: 16px;
+	padding: 24px;
+	font-size: 1rem;
+	border: 1px solid var(--primary-color);
+	border-radius: 24px;
+	cursor: pointer;
+}
+
+.encryptor__button__primary {
+	background-color: var(--primary-color);
+	color: var(--white);
+}
+
+.encryptor__button__secondary {
+	background-color: transparent;
+	color: var(--primary-color);
+}
+
+.encryptor__button__secondary:hover {
+	background-color: var(--tertiary-color);
+}
+
+.encryptor__output {
+	background-color: var(--white);
+	flex-basis: calc(20% - 1rem);
+	padding: 32px;
+	border-radius: 32px;
+	box-shadow: 0 24px 32px -8px #00000014;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.encryptor__text {
+	color: var(--secondary-color);
+	margin: 16px 0;
+	font-size: 1rem;
+	text-align: center;
+}
+
+.encryptor__text__highlighted {
+	color: var(--secondary-color-v2);
+	font-size: 1.5rem;
+	font-weight: 700;
+}
+
+.encryptor__output__message {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.encryptor__output__textarea {
+	color: var(--secondary-color);
+	min-height: 390px;
+	font-size: 1.5rem;
+}
+
+.footer {
+	margin-top: 50px;
+	padding: 20px;
+}
+
+.footer p {
+	color: var(--secondary-color-v2);
+	font-size: 1.5rem;
+	text-align: center;
+}
+
+@media(min-width: 1400px) {
+	.encryptor__input__textarea {
+		min-height: 600px;
+	}
+
+	.encryptor__output__textarea {
+		min-height: 590px;
+	}
+}
+
+@media(max-width: 768px) {
+	.encryptor {
+		flex-direction: column;
+	}
+
+	.encryptor__output {
+		margin-top: 64px;
+	}
+
+	.encryptor__output__textarea {
+		min-height: auto;
+	}
+}
+
+@media(max-width: 390px) {
+	.encryptor__buttons {
+		flex-direction: column;
+	}
+}
