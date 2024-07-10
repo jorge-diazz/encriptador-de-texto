@@ -38,3 +38,7 @@ La letra "u" es convertida para "ufat"
 **Desencriptado**
 
     felicidades por enfrentar este desafio y haberlo concluido con exito!
+
+# Insignia de completado
+
+<image src="/img/Prancheta 3.png" alt="Insignia de completado">
