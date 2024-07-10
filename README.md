@@ -1,5 +1,5 @@
 # Encriptador de texto
-Primer desafío de alura latam una aplicación que encripta y desencripta texto, creado mediante HTML, CSS y JavaScript.
+Primer desafío de alura latam una aplicación que encripta y desencripta texto, creado mediante HTML, CSS y JavaScript. [Click aqui](https://jorge-diazz.github.io/encriptador-de-texto/)
 
 <image src="/img/encriptador-de-texto.png" alt="Imagen de la aplicacion funcionando">
 
